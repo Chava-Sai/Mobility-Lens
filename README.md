@@ -73,11 +73,11 @@ One deliberate mobile-appropriate decision was customizing the app's typography 
 
 | Running application on the first dimension             | A different dimension after user interaction                   |
 | ------------------------------------------------------ | -------------------------------------------------------------- |
-| ![First dimension](screenshots/01-first-dimension.png) | ![Different dimension](screenshots/02-different-dimension.png) |
+| ![First dimension](ScreenShots/SS-1.png) | ![Different dimension](ScreenShots/SS-2.png) |
 
 | Validation response to blank input                       | Successful response to valid input                   |
 | -------------------------------------------------------- | ---------------------------------------------------- |
-| ![Blank validation](screenshots/03-blank-validation.png) | ![Valid response](screenshots/04-valid-response.png) |
+| ![Blank validation](ScreenShots/SS-3.png) | ![Valid response](ScreenShots/SS-4.png) |
 
 ---
 
