@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MobilityLens</string>
+
+    <string name="dimension_input_title">Input and Interaction</string>
+    <string name="dimension_input_description">Phones depend on touch, voice, and gestures but not with a mouse and keyboard and screen space for input controls is limited.</string>
+    <string name="dimension_input_implication">Design large, easy to tap buttons and avoid assuming precise pointer input like hover states.</string>
+
+    <string name="dimension_screen_title">Screen Size, Orientation, and Density</string>
+    <string name="dimension_screen_description">Mobile screens are small, vary widely in resolution, and can rotate between portrait and landscape at any time.</string>
+    <string name="dimension_screen_implication">Use flexible layouts that change to different screen sizes and handle rotation gracefully instead of a single fixed layout.</string>
+
+    <string name="dimension_lifecycle_title">Lifecycle and Resource Constraints</string>
+    <string name="dimension_lifecycle_description">Mobile apps can be paused, backgrounded, or killed by the system at any time to save battery and memory.</string>
+    <string name="dimension_lifecycle_implication">Save important state before the app is interrupted so users do not lose progress when switching apps.</string>
+
+    <string name="dimension_context_title">Context Awareness</string>
+    <string name="dimension_context_description">Phones have GPS, accelerometer, and camera that let apps respond to the users real-world surroundings.</string>
+    <string name="dimension_context_implication">Use location or sensor data perfectly to make the app more useful while asking permission only when truly needed.</string>
+
+    <string name="dimension_usage_title">Usage Patterns</string>
+    <string name="dimension_usage_description">Mobile sessions are typically short and frequent, often used in brief moments throughout the day rather than long sittings.</string>
+    <string name="dimension_usage_implication">Design for quick task completion and let users pick up where they left off after a short interruption.</string>
+
+    <string name="dimension_security_title">Security and Privacy Expectations</string>
+    <string name="dimension_security_description">Phones store personal data and are frequently lost or stolen, so users expect stronger protection of their information.</string>
+    <string name="dimension_security_implication">Request only the permissions and data the app truly needs, and avoid storing sensitive data unnecessarily.</string>
+    <string name="button_previous">Previous</string>
+    <string name="button_next">Next</string>
+    <string name="label_app_name">App or feature name</string>
+    <string name="button_check">Check</string>
+    <string name="feedback_blank_input">Please enter an app or feature name before checking.</string>
+</resources>
