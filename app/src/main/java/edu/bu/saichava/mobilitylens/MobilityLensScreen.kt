@@ -4,13 +4,17 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.imePadding
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
@@ -20,7 +24,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun MobilityLensScreen(modifier: Modifier = Modifier) {
-    var currentIndex by remember { mutableStateOf(0) }
+    var currentIndex by remember { mutableIntStateOf(0) }
     val currentDimension = mobilityDimensions[currentIndex]
 
     var appName by remember { mutableStateOf("") }
@@ -28,11 +32,27 @@ fun MobilityLensScreen(modifier: Modifier = Modifier) {
 
     val currentDimensionTitle = stringResource(id = currentDimension.titleResId)
     val blankFieldWarning = stringResource(id = R.string.feedback_blank_input)
+    val successfulFeedback = stringResource(
+        id = R.string.feedback_success,
+        appName.trim(),
+        currentDimensionTitle
+    )
 
-    Column(modifier = modifier.padding(16.dp)) {
+    Column(
+        modifier = modifier
+            .verticalScroll(rememberScrollState())
+            .imePadding()
+            .padding(16.dp)
+    ) {
         Text(
             text = stringResource(id = R.string.app_name),
             style = MaterialTheme.typography.headlineMedium
+        )
+
+        Text(
+            text = stringResource(id = R.string.app_introduction),
+            style = MaterialTheme.typography.bodyMedium,
+            modifier = Modifier.padding(top = 4.dp, bottom = 16.dp)
         )
 
         Text(
@@ -85,7 +105,7 @@ fun MobilityLensScreen(modifier: Modifier = Modifier) {
                 feedbackMessage = if (appName.isBlank()) {
                     blankFieldWarning
                 } else {
-                    "$appName — $currentDimensionTitle"
+                    successfulFeedback
                 }
             },
             modifier = Modifier.padding(top = 8.dp)

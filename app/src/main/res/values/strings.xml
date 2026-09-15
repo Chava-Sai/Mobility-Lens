@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">MobilityLens</string>
+    <string name="app_name">Mobility Lens</string>
+    <string name="app_introduction">Explore how six mobile constraints influence application design.</string>
 
     <string name="dimension_input_title">Input and Interaction</string>
-    <string name="dimension_input_description">Phones depend on touch, voice, and gestures but not with a mouse and keyboard and screen space for input controls is limited.</string>
+    <string name="dimension_input_description">Phones rely on touch, voice, and gestures rather than a mouse and keyboard, while screen space for input controls is limited.</string>
     <string name="dimension_input_implication">Design large, easy to tap buttons and avoid assuming precise pointer input like hover states.</string>
 
     <string name="dimension_screen_title">Screen Size, Orientation, and Density</string>
@@ -14,8 +15,8 @@
     <string name="dimension_lifecycle_implication">Save important state before the app is interrupted so users do not lose progress when switching apps.</string>
 
     <string name="dimension_context_title">Context Awareness</string>
-    <string name="dimension_context_description">Phones have GPS, accelerometer, and camera that let apps respond to the users real-world surroundings.</string>
-    <string name="dimension_context_implication">Use location or sensor data perfectly to make the app more useful while asking permission only when truly needed.</string>
+    <string name="dimension_context_description">Phones have GPS, accelerometers, and cameras that let apps respond to the surrounding real-world environment.</string>
+    <string name="dimension_context_implication">Use location or sensor data responsibly to make the app more useful, and request permission only when truly needed.</string>
 
     <string name="dimension_usage_title">Usage Patterns</string>
     <string name="dimension_usage_description">Mobile sessions are typically short and frequent, often used in brief moments throughout the day rather than long sittings.</string>
@@ -29,4 +30,5 @@
     <string name="label_app_name">App or feature name</string>
     <string name="button_check">Check</string>
     <string name="feedback_blank_input">Please enter an app or feature name before checking.</string>
+    <string name="feedback_success">%1$s — %2$s</string>
 </resources>
